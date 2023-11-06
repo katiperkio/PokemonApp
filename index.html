@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander&family=Outfit:wght@300&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pokedex</h1>
+    </header>
+    <div class="pickGen">
+      <button class="genBtn" onclick="fetchData(151, 0)">Gen I</button>
+      <button class="genBtn" onclick="fetchData(100, 151)">Gen II</button>
+      <button class="genBtn" onclick="fetchData(135, 251)">Gen III</button>
+      <button class="genBtn" onclick="fetchData(107, 386)">Gen IV</button>
+      <button class="genBtn" onclick="fetchData(156, 493)">Gen V</button>
+      <button class="genBtn" onclick="fetchData(72, 649)">Gen VI</button>
+      <button class="genBtn" onclick="fetchData(88, 721)">Gen VII</button>
+      <button class="genBtn" onclick="fetchData(96, 809)">Gen VIII</button>
+      <button class="genBtn" onclick="fetchData(112, 905)">Gen IX</button>
+    </div>
+    <div class="pokeSearch">
+      <input id="searchBar" type="search" placeholder="Search Pokedex" />
+    </div>
+    <div class="pokeAmount"></div>
+    <div class="cardWrapper"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
